@@ -3,8 +3,17 @@ import forward from "koa-forward-request";
 import mount from "koa-mount";
 import log from "../util/log";
 import Api from "./api";
-
 import Frontend from "./frontend";
+import notifier from "node-notifier"
+
+notifier.notify('Message');
+
+// Object
+notifier.notify({
+  'title': 'My notification',
+  'message': 'Hello, there!'
+});
+
 
 function App() {
   const app = koa();
