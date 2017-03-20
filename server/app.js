@@ -6,12 +6,12 @@ import Api from "./api";
 import Frontend from "./frontend";
 import notifier from "node-notifier"
 
-notifier.notify('Message');
-
 // Object
 notifier.notify({
   'title': 'My notification',
-  'message': 'Hello, there!'
+  'message': 'Hello, there!',
+  'subtitle': 'Daily Maintenance',
+  'sound': true
 });
 
 
